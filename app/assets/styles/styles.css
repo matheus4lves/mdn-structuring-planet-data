@@ -40,3 +40,19 @@ table,
 tr {
   border: none;
 }
+/* You can use the col element to style a column in a table, but only a few
+styles can be applied: border, background, width and visibility. If you want
+to add a brackground to a column using the col element, both the cell and row
+must have transparent backgrounds (total, with background set to transparent,
+or partial, with the background set to an rgba color with opacity set to less
+than 100%.
+
+See the specification: https://www.w3.org/TR/CSS21/tables.html#columns */
+col.planet-names {
+  border: 2px solid yellow;
+  /* You can uncomment the following declaration and it will only work
+  because the cells for this column have a transparent background. If
+  you change the opacity to be 1 (100%) in the .main-column class, it won't
+  work anymore. */
+  /* background: blue; */
+}
